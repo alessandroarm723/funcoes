@@ -1,0 +1,25 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro Mresultado , Mnumero1 ,Mnumero2
+
+		escreva("Digite o primeiro numero: ")
+		leia (Mnumero1)
+		escreva ("Digite o segundo numero: ")
+		leia (Mnumero2)
+
+		Mresultado = somar( Mnumero1, Mnumero2 )
+          escreva( "A soma dos numeros è :" , Mresultado)
+		}
+		funcao inteiro somar (inteiro a , inteiro b )
+	  {
+	  	inteiro Msoma
+	  	
+	  	Msoma = a+b
+	  	retorne Msoma
+	  }
+
+	  
+}
