@@ -1,0 +1,37 @@
+programa
+{
+	//Variavel de escopo global
+	real Mglobal1, Mglobal2
+	funcao inicio()
+	{
+    //variavel de escopo localá função principal do programa 
+    real Mnumero3, Mnumero4
+
+    escreva("digite o primeiro número: ")
+    leia(Mglobal1)
+    escreva("digite o segundo número: ")
+    leia(Mglobal2)
+
+    escreva("\n0 resultado do primeiro calculo é: ", calcula(Mglobal1, Mglobal2)) // chama função no escreva
+
+
+    escreva("digite o terceiro número: ")
+    leia(Mnumero3)
+    escreva("digite o quarto número:")
+    leia(Mnumero4)
+
+    escreva("\n0 resultado do segundo cálculo é:" , calcula(Mnumero3, Mnumero4),"\n") //chama a  função no escreva
+
+	}
+
+	//Função que realiza um calculo e retorna o resultado
+     funcao real calcula(real a , real b)
+     {
+     // A variavelde escopo local de função 'calcula'
+     real resultado 
+
+     resultado = Mglobal2 / b
+     // resultado = a / b
+      retorne resultado
+     }
+ }
